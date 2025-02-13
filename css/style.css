@@ -4,22 +4,6 @@
     letter-spacing: 1px;
 }
 
-.first-page {
-    position: relative;
-    height: 100vh;
-    align-content: center;
-    text-align: center;
-}
-
-button {
-    width: 100px;
-    height: 40px;
-    display: inline-block;
-    border: 2px solid #fa9ebc;
-    border-radius: 20px;
-    text-align: center;
-}
-
 h3 {
     text-align: center;
 }
@@ -41,9 +25,9 @@ h3 {
 }
 
 .picture div {
-    width: 150px; /* ukuran polaroid */
-    height: 180px; /* lebih tinggi dari gambar untuk memberi ruang tulisan */
-    background: white;
+    width: 150px;
+    /*ukuranpolaroid*/height: 180px;
+    /*lebihtinggidarigambaruntukmemberiruangtulisan*/background: white;
     padding: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -51,6 +35,11 @@ h3 {
     align-items: center;
     justify-content: flex-start;
     border-radius: 5px;
+    transition: transform 10s ease-in-out;
+    -webkit-transition: transform 10s ease-in-out;
+    -moz-transition: transform 10s ease-in-out;
+    -ms-transition: transform 10s ease-in-out;
+    -o-transition: transform 10s ease-in-out;
 }
 
 .picture img {
@@ -59,12 +48,25 @@ h3 {
     object-fit: cover;
 }
 
-.polaroid-caption {
-    font-size: 12px;
-    font-family: "Courier New", monospace;
-    text-align: center;
-    margin-top: 5px;
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    60% { transform: rotate(-3deg); }
+    80% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
 }
+
+.picture div:active {
+    animation: shake 0.4s ease-in-out;
+}
+
+p {
+    opacity: 0.7;
+    font-size: 12px;
+}
+
 
 
 
