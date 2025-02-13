@@ -6,14 +6,26 @@
 
 h3 {
     text-align: center;
+    margin-bottom: 16px;
+}
+
+body {
+    padding: 64px 20px;
 }
 
 .wall-of-us {
-    padding: 64px 20px;
+    padding: 64px 0px;
 }
 
 .long-text {
     text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.kotak {
+    margin: 16px;
+    height: 100px;
 }
 
 .pic {
@@ -30,8 +42,8 @@ h3 {
 
 .picture div {
     width: 150px;
-    /*ukuranpolaroid*/height: 180px;
-    /*lebihtinggidarigambaruntukmemberiruangtulisan*/background: white;
+    height: 180px;
+    background: white;
     padding: 10px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -71,6 +83,94 @@ p {
     opacity: 0.7;
     font-size: 12px;
 }
+
+.now-playing {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.cover {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.song-info {
+    width: 200px;
+}
+
+.song-info h3 {
+    margin: 0;
+    font-size: 12px;
+    text-align: start;
+}
+
+span {
+    opacity: 0.8;
+}
+
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: rgb(255, 125, 168);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background: rgb(255, 125, 168);
+    transition: width 0.1s linear;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+button {
+    background: #ffffff;
+    border: none;
+    color: rgb(255, 125, 168);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.progress-bar {
+    background: rgb(255, 209, 224) !important;
+}
+
+.progress {
+    background: rgb(255, 125, 168) !important;
+}
+
 
 
 
